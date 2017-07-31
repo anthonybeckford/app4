@@ -1,0 +1,75 @@
+.flash-data {
+    background-color:transparent;
+    width:100%;
+}
+
+.flash-data div,
+.modal-flash-data div,
+#old_browser div {
+    /*
+    max-width:1170px;
+    */
+    width:100%;
+    font-weight:normal;
+    font-size:14px;
+    font-family: "Roboto", sans-serif;
+    padding:1em;
+    border-radius: 3px;
+}
+
+.flash-data .inner,
+.modal-flash-data .inner,
+#old_browser .inner {
+    max-width:1170px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.flash-data .success,
+.modal-flash-data .success,
+#old_browser .success {
+    color:#3c763d;
+    background-color:#dff0d8;
+    border-color:#d6e9c6;
+}
+
+
+
+.flash-data .info,
+.modal-flash-data .info,
+#old_browser .info {
+    color:#31708f;
+    background-color:#d9edf7;
+    border-color:#bce8f1;
+    font-style: normal;
+}
+
+
+
+.flash-data .error,
+.modal-flash-data .error,
+#old_browser .error {
+    color:#a94442;
+    background-color:#f2dede;
+    border-color:#ebccd1;
+}
+
+
+
+.flash-data .info a,
+#old_browser .info a {
+    color:#31708f;
+    text-decoration:underline;
+}
+
+.flash-data .error a,
+#old_browser .error a {
+    color:#a94442;
+    text-decoration:underline;
+}
+
+.flash-data .success a,
+#old_browser .success a {
+    color:#3c763d;
+    text-decoration:underline;
+}

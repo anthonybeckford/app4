@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    	DirectoryIndex index.php
+
+        RewriteEngine On
+        RewriteBase /
+        RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+        RewriteRule ^index\.php$ / [R=301,L]
+
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule . / [QSA,L]
+
+        AddDefaultCharset utf-8
+        AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
+</IfModule>
