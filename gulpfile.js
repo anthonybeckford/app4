@@ -30,7 +30,7 @@ var paths = {
     vendor: './public/vendor'
 };
 
-gulp.task('default', ['routes', 'css', 'vendor', 'icons', 'vendor-css', 'vendor-js', 'datamaps-js' ,'js', 'admin-vendor-js', 'admin-css']);
+gulp.task('default', ['routes', 'css', 'js']);
 
 gulp.task('sass', function() {
 
@@ -53,7 +53,7 @@ gulp.task('sass', function() {
 });
 
 
-gulp.task('css', ['sass', 'vendor-css', 'admin-css'], function () {
+gulp.task('css', ['sass'], function () {
 
     var folders = getFolders(paths.css);
 
